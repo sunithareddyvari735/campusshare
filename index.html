@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="logo-container">
+      <img src="logo.png" alt="logo" class="logo">
+      <h1 class="wesite_name">CampuShare</h1>
+    </div>
+    <nav class="nav-links">
+      <a>Browse</a>
+      <a>Categeries</a>
+      <a>Community</a>
+      <button class="highlightbtn"><i class="fa-solid fa-upload"></i>
+      upload</button>
+      <a>SignIn</a>
+    </nav>
+  </header> 
+  <div class="text">
+    <p>Join 50,000+ students mastering their studies</p>
+    <h1>Find the <span>relatable</span> resources you need to ace it.</h1>
+    <h5>Access peer-reviewed PDFs, engaging video tutorials, and curated academic notes. Rated by students, for students.</h5>
+    <button class="highlightbtn">Get Started</button>
+    <button class="btndemo" class="highlightbtn"><i class="fa-solid fa-play"></i> Watch Demo</button>
+  </div>
+  <div class="search-container">
+    <input type="search" placeholder="Search for resources.......">
+    <i class="fa-solid fa-magnifying-glass"></i>
+  </div>
+  
+
+<div class="filter-bar">
+
+    <!-- Category Buttons -->
+    <div class="category-group">
+        <button class="category-btn active">All</button>
+        <button class="category-btn">PDFs</button>
+        <button class="category-btn">Videos</button>
+    </div>
+
+    <!-- Dropdown -->
+    <select id="subject-filter">
+        <option value="all">All Subjects</option>
+        <option value="Physics">Physics</option>
+        <option value="Mathematics">Mathematics</option>
+        <option value="Computer Science">Computer Science</option>
+        <option value="Biology">Biology</option>
+        <option value="Chemistry">Chemistry</option>
+        <option value="Web Development">Web Development</option>
+        <option value="Artificial Intelligence">Artificial Intelligence</option>
+        <option value="Electronics and Communication">Electronics and Communication</option>
+        <option value="Electrical">Electrical</option>
+        <option value="Mechanical">Mechanical</option>
+        <option value="Civil">Civil</option>
+    </select>
+
+    <div class="divider"></div>
+
+    <!-- Sort Section -->
+    <div class="sort-section">
+        <span class="sort-label">Sort by:</span>
+        <button class="sort-btn active">Top Rated</button>
+        <button class="sort-btn">Popular</button>
+        <button class="sort-btn">Newest</button>
+    </div>
+
+</div>
+<section class="bottom-courses-section">
+    <div class="bottom-courses-container">
+
+        <!-- Card 1 -->
+        <div class="bottom-course-card" data-type="video" data-category="Physics" data-rating="4.9" data-views="856" data-date="20250208">
+            <div class="bottom-course-img">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d" alt="">
+                <span class="bottom-badge video">VIDEO</span>
+            </div>
+            <div class="bottom-course-content">
+                <div class="bottom-course-top">
+                    <span class="bottom-category">Physics</span>
+                    <span class="bottom-rating">⭐ 4.9</span>
+                </div>
+                <h3>Introduction to Quantum Physics - Video Series</h3>
+                <p>A visual journey into the basics of Quantum Mechanics.</p>
+                <div class="bottom-course-footer">
+                    <span>Dr. Alan Grant</span>
+                    <span>856 • 8 Feb</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bottom-course-card" data-type="pdf" data-category="Mathematics" data-rating="4.8" data-views="1200" data-date="20250210">
+            <div class="bottom-course-img">
+                <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d" alt="">
+                <span class="bottom-badge pdf">PDF</span>
+            </div>
+            <div class="bottom-course-content">
+                <div class="bottom-course-top">
+                    <span class="bottom-category">Mathematics</span>
+                    <span class="bottom-rating">⭐ 4.8</span>
+                </div>
+                <h3>Advanced Calculus: Limits and Derivatives</h3>
+                <p>Comprehensive guide to understanding limits and derivatives.</p>
+                <div class="bottom-course-footer">
+                    <span>Prof. Sarah Lee</span>
+                    <span>1.2K • 10 Feb</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="bottom-course-card" data-type="video" data-category="Computer Science" data-rating="4.7" data-views="5600" data-date="20250201">
+            <div class="bottom-course-img">
+                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="">
+                <span class="bottom-badge video">VIDEO</span>
+            </div>
+            <div class="bottom-course-content">
+                <div class="bottom-course-top">
+                    <span class="bottom-category">Computer Science</span>
+                    <span class="bottom-rating">⭐ 4.7</span>
+                </div>
+                <h3>Python for Data Science Crash Course</h3>
+                <p>Learn pandas, numpy, and matplotlib in 2 hours.</p>
+                <div class="bottom-course-footer">
+                    <span>CodeWithMe</span>
+                    <span>5.6K • 1 Feb</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="bottom-course-card" data-type="pdf" data-category="Biology" data-rating="4.6" data-views="1500" data-date="20250205">
+            <div class="bottom-course-img">
+                <img src="https://images.unsplash.com/photo-1530213786676-41ad9f7736f6" alt="">
+                <span class="bottom-badge pdf">PDF</span>
+            </div>
+            <div class="bottom-course-content">
+                <div class="bottom-course-top">
+                    <span class="bottom-category">Biology</span>
+                    <span class="bottom-rating">⭐ 4.6</span>
+                </div>
+                <h3>Anatomy of the Human Brain</h3>
+                <p>High-resolution diagrams and labeling exercises for neuroanatomy.</p>
+                <div class="bottom-course-footer">
+                    <span>MedStudent</span>
+                    <span>1.5K • 5 Feb</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="bottom-course-card" data-type="video" data-category="Chemistry" data-rating="4.5" data-views="980" data-date="20250212">
+            <div class="bottom-course-img">
+                <img src="https://images.unsplash.com/photo-1581091870627-3c1f2c5e3b7a" alt="">
+                <span class="bottom-badge video">VIDEO</span>
+            </div>
+            <div class="bottom-course-content">
+                <div class="bottom-course-top">
+                    <span class="bottom-category">Chemistry</span>
+                    <span class="bottom-rating">⭐ 4.5</span>
+                </div>
+                <h3>Organic Chemistry Fundamentals</h3>
+                <p>Understand reactions, mechanisms, and bonding concepts clearly.</p>
+                <div class="bottom-course-footer">
+                    <span>Dr. Meera Shah</span>
+                    <span>980 • 12 Feb</span>
+                </div>
+            </div>
+        </div>
+
+    <!-- Card 6 -->
+    <div class="bottom-course-card" data-type="pdf" data-category="Web Development" data-rating="4.9" data-views="2100" data-date="20250215">
+        <div class="bottom-course-img">
+            <img src="https://images.unsplash.com/photo-1508780709619-79562169bc64" alt="">
+            <span class="bottom-badge pdf">PDF</span>
+        </div>
+        <div class="bottom-course-content">
+            <div class="bottom-course-top">
+                <span class="bottom-category">Web Development</span>
+                <span class="bottom-rating">⭐ 4.9</span>
+            </div>
+            <h3>HTML & CSS Complete Guide</h3>
+            <p>Master layouts, flexbox, grid, and responsive design.</p>
+            <div class="bottom-course-footer">
+                <span>FrontendPro</span>
+                <span>2.1K • 15 Feb</span>
+            </div>
+        </div>
+    </div>
+    <!-- Card 1 -->
+        <div class="bottom-course-card" data-type="video" data-category="Physics" data-rating="4.9" data-views="856" data-date="20250208">
+            <div class="bottom-course-img">
+                <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d" alt="">
+                <span class="bottom-badge video">VIDEO</span>
+            </div>
+            <div class="bottom-course-content">
+                <div class="bottom-course-top">
+                    <span class="bottom-category">Physics</span>
+                    <span class="bottom-rating">⭐ 4.9</span>
+                </div>
+                <h3>Introduction to Quantum Physics - Video Series</h3>
+                <p>A visual journey into the basics of Quantum Mechanics.</p>
+                <div class="bottom-course-footer">
+                    <span>Dr. Alan Grant</span>
+                    <span>856 • 8 Feb</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="bottom-course-card" data-type="pdf" data-category="Mathematics" data-rating="4.8" data-views="1200" data-date="20250210">
+            <div class="bottom-course-img">
+                <img src="https://images.unsplash.com/photo-1509228627152-72ae9ae6848d" alt="">
+                <span class="bottom-badge pdf">PDF</span>
+            </div>
+            <div class="bottom-course-content">
+                <div class="bottom-course-top">
+                    <span class="bottom-category">Mathematics</span>
+                    <span class="bottom-rating">⭐ 4.8</span>
+                </div>
+                <h3>Advanced Calculus: Limits and Derivatives</h3>
+                <p>Comprehensive guide to understanding limits and derivatives.</p>
+                <div class="bottom-course-footer">
+                    <span>Prof. Sarah Lee</span>
+                    <span>1.2K • 10 Feb</span>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="footer-container">
+
+        <!-- Brand -->
+        <div class="footer-column">
+            <h3>CampuShare</h3>
+            <p>Empowering students worldwide with accessible, high-quality academic resources.</p>
+
+            <!-- Social Icons -->
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-github"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+
+        <!-- Resources -->
+        <div class="footer-column">
+            <h3>Resources</h3>
+            <ul>
+                <li><a href="#">PDF Notes</a></li>
+                <li><a href="#">Video Lectures</a></li>
+                <li><a href="#">Study Guides</a></li>
+                <li><a href="#">Practice Exams</a></li>
+            </ul>
+        </div>
+
+        <!-- Company -->
+        <div class="footer-column">
+            <h3>Company</h3>
+            <ul>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter -->
+        <div class="footer-column">
+            <h3>Stay Updated</h3>
+            <p>Subscribe to our newsletter for the latest study tips.</p>
+            <div class="newsletter">
+                <input type="email" placeholder="Enter your email">
+                <button><i class="fa-solid fa-arrow-right"></i></button>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bottom Section -->
+    <div class="footer-bottom">
+        <div>© 2026 CampusShare Inc. All rights reserved.</div>
+        <div>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Service</a>
+            <a href="#">Cookie Settings</a>
+        </div>
+    </div>
+</footer>
+
+<script>
+  const categoryBtns = document.querySelectorAll('.category-btn');
+  const sortBtns = document.querySelectorAll('.sort-btn');
+  const subjectFilter = document.getElementById('subject-filter');
+  const container = document.querySelector('.bottom-courses-container');
+
+  let activeType = 'all';       // all, pdf, video
+  let activeSubject = 'all';    // all or subject name
+  let activeSort = 'top rated'; // top rated, popular, newest
+
+  function applyFiltersAndSort() {
+    const allCards = Array.from(document.querySelectorAll('.bottom-course-card'));
+
+    // 1. Filter
+    let visible = allCards.filter(card => {
+      const type = card.getAttribute('data-type');
+      const category = card.getAttribute('data-category');
+
+      const typeMatch = activeType === 'all' || type === activeType;
+      const subjectMatch = activeSubject === 'all' || category === activeSubject;
+      return typeMatch && subjectMatch;
+    });
+
+    // 2. Sort visible cards
+    visible.sort((a, b) => {
+      if (activeSort === 'top rated') {
+        return parseFloat(b.getAttribute('data-rating')) - parseFloat(a.getAttribute('data-rating'));
+      } else if (activeSort === 'popular') {
+        return parseInt(b.getAttribute('data-views')) - parseInt(a.getAttribute('data-views'));
+      } else if (activeSort === 'newest') {
+        return parseInt(b.getAttribute('data-date')) - parseInt(a.getAttribute('data-date'));
+      }
+    });
+
+    // 3. Show/hide and reorder
+    allCards.forEach(card => card.style.display = 'none');
+    visible.forEach(card => {
+      card.style.display = 'block';
+      container.appendChild(card); // reorder in DOM
+    });
+  }
+
+  // Type filter buttons (All / PDFs / Videos)
+  categoryBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      categoryBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      const label = btn.textContent.trim().toLowerCase();
+      if (label === 'pdfs') activeType = 'pdf';
+      else if (label === 'videos') activeType = 'video';
+      else activeType = 'all';
+      applyFiltersAndSort();
+    });
+  });
+
+  // Subject dropdown
+  subjectFilter.addEventListener('change', () => {
+    activeSubject = subjectFilter.value;
+    applyFiltersAndSort();
+  });
+
+  // Sort buttons (Top Rated / Popular / Newest)
+  sortBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      sortBtns.forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      activeSort = btn.textContent.trim().toLowerCase();
+      applyFiltersAndSort();
+    });
+  });
+</script>
+
+</body>
+</html>
